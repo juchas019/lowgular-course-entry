@@ -1,0 +1,7 @@
+<h1>Faces</h1>
+<div style="display: inline-block; " *ngFor ="let employee of data$ | async">
+
+  <img style="width: 300px; margin: 15px;" alt="image person" [src]="employee.image">
+  <br>
+  {{employee.name}}
+</div>
